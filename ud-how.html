@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>How to Create Accessible Sites</title>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="why.css" rel="stylesheet">
+</head>
+<body>
+  <a href="#main-content" class="skip-link"> Skip Navigation </a>
+<div class="container">
+  <header>
+    <h1>How to Create Accessible Sites</h1>
+  </header>
+  <!-- nav>ul>li*3>a[#]{Link $} -->
+  <nav>
+    <h2 class="sr-only"> Main Navigation </h2>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="ud-why.html">The Importance</a></li>
+      <li><a href="">How To Achieve</a></li>
+    </ul>
+  </nav>
+  <!-- main>section*3>h2+p*5>lorem -->
+  <main id="main-content">
+    <section>
+        <h2>Readability</h2>
+        <h3> Formatting Your Text </h3>
+        <p>When choosing your website fonts, you want to stick to preferably two fonts per site. You should use a serif font for your headers and a sans-serif font for your longer amounts of text. <a href="https://fonts.google.com/">Google fonts</a> is a great place to look for different fonts. Of course, you always want to make sure your text size and line height are large enough for easy reading. </p>
+        
+        <h3> Having Good Color Contrast </h3>
+        <p>
+          While good color contrast applies to the general color scheme of your site, it especially applies to your text and background. <a href="https://color.adobe.com/create/color-contrast-analyzer">Adobe Color</a> is a great resource to check for color contrast that meets WCAG standards. It's also useful for choosing color blind safe palettes.    
+        </p>
+    </section>
+    <section>
+        <h2>Compatibility With Screen Readers</h2>
+        <h3> Adding Headings </h3>
+        <p>Users who are visually impaired often use a screen reader to navigate websites. There are a few things you should always do. One of them is to title your main navigation with an h2 tag. You can always hide the title visually with CSS, but providing the title is important for screen readers. Users with visual impairments will have an easier time navigating your site if they know where your nav links are. It's generally good practice to title all sections on your page. The <a href="https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=en"> HTML outliner plugin</a> is a great tool to check for untitled elements on your site. </p>
+
+        <h3> Alt Text and Captions </h3>
+        <p>
+          Another thing to keep note of is always adding alt text and captions to your images. This gives everyone access to image details. Alt text is important not just for screen readers but also if something happens such that your image won't load. The <a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US"> WAVE accessibility evaluation tool</a> is perfect for catching missing alt text in your site. It also catches many other kinds of errors too.   
+        </p>
+        
+    </section>
+    <section>
+        <h2>Designing For Limited Mobility</h2>
+        <h3> Skip Navigation </h3>
+        <p>
+          Users with limited mobility sometimes need to rely on keyboard navigation to access information on your website. As your site gets bigger, you may end up having several links in your main navigation. It can get very tedious for a user if they have to tab through the navigation every time. A skip navigation allows users to bypass the main navigation and go directly to the main content. This makes keyboard navigation faster. 
+        </p>
+
+        <h3> Making Your Site Responsive </h3>
+        <p>
+          Some users can only access websites with a mobile device because of limited mobility or other reasons. Either way, it's good to make your site responsive using media queries. A media query essentially checks for the size of your device window, and you can render your page differently based on these conditions. This includes spacing out your main navigation links such that users can easily click them with their thumb on a mobile device. 
+        </p>
+
+        <p>
+          Making a responsive site can often lead to errors and visual eyesores. You can check your HTML with this <a href="https://validator.w3.org/nu/#file">HTML checker</a> and standardize your styling with <a href="https://necolas.github.io/normalize.css/">Normalize.css</a> before adding more CSS to style your website.   
+        </p>
+    </section>
+    <section>
+      <h2> Class Examples </h2>
+      <p> <a href="tables-forms/pokemon.html"> Accessible Tables and Forms </a> </p>
+      <p> <a href="accessible-layout/acnh.html"> Graceful Degradation With Grid and Flexbox </a> </p>
+      <p> <a href="wikipediaPage/loz.html"> A Simple and Readable Wikipedia Page </a> </p>
+    </section>
+  </main>
+
+</div> <!-- end container -->
+</body>
+</html>

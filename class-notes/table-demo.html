@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Accessible Tables </title>
+    <style>
+        table, th, td{
+            border-collapse: collapse;
+        }
+        table{
+            margin-bottom: 30px;
+        }
+        td{
+            border: 2px solid red;
+            padding-right: 70px;
+            text-align: center;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <header>  
+        <h1> Accessible Tables </h1>
+    </header>
+    <section>
+        <h2> Accessible Table Data </h2>
+
+        <table>
+            <caption> Animals that can kill you </caption>
+            <thead>
+                <tr>
+                    <th scope="col"> Lions </th>
+                    <th scope="col"> Tigers </th>
+                    <th scope="col"> Bears </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Simba </td>
+                    <td> Tigger </td>
+                    <td> Winney </td>
+                </tr>
+                <tr>
+                    <td> Cecil </td>
+                    <td> Tygra </td>
+                    <td> Baloo </td>
+                </tr>
+                <tr>
+                    <td> Mufasa </td>
+                    <td> Tony </td>
+                    <td> Yogi </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <caption> More Animals that can kill you </caption>
+            <thead>
+                <tr>
+                    <th scope="col"> Dragons </th>
+                    <th scope="col"> Sharks </th>
+                    <th scope="col"> Humans </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Blue </td>
+                    <td> Bruce </td>
+                    <td> Betty White </td>
+                </tr>
+                <tr>
+                    <td> Echo </td>
+                    <td> Laser Shark </td>
+                    <td> Ted Bundy </td>
+                </tr>
+                <tr>
+                    <td> Toothless </td>
+                    <td> Baby Shark </td>
+                    <td> Jeff Dahmner </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+  </body>
+</html>

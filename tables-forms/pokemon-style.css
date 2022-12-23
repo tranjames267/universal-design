@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+/* font-family: 'Noto Serif', serif;
+font-family: 'Roboto', sans-serif; */
+
+header{
+    background: lightcyan;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em; 
+}
+
+body {
+    font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    /* margin: 0 auto;
+    max-width: 960px; */
+    background: black;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em; 
+}
+nav ul {
+    display: flex;
+    flex-flow: row nowrap; 
+    justify-content: space-around;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em; 
+}
+    
+nav ul li {
+    list-style: none;  
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;  
+}
+
+nav ul li a:visited {
+    color: white;  
+}
+
+nav ul li a:hover {
+    color: blanchedalmond;
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    color: blanchedalmond; 
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+h1 {
+    font-size: 2.3em;
+    font-family: 'Noto Serif', serif;
+}
+h2 {
+    font-size: 1.4em;
+    font-family: 'Noto Serif', serif;
+    margin-top: 1.5em;
+}
+
+p {
+    line-height: 1.7em; 
+}
+
+abbr {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+#faq{
+    padding-top: 0.3em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 2px solid black;
+}
+
+#fandom{
+    background: #fffbed;
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 1.5em;
+}
+
+table, th, td{
+    border-collapse: collapse;
+}
+
+table{
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2.5em;
+}
+
+td{
+    border: 2px solid black;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    text-align: center;
+}
+
+caption{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+details{
+    line-height: 1.5em;
+}
+
+summary{
+    font-weight: bold;
+}
+
+input:focus {
+    background: lightcyan;
+    color: black;
+}
+
+input:valid {
+    border: 2px solid #3d9ca8;
+}
+
+input:invalid {
+    border: 2px solid red; 
+}
+
+label
+ {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.skip-link {
+    background: blanchedalmond;
+    color: black;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }
+  
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+  
+  .skip-link {
+    /* Same as  before */
+    transition: transform 0.3s;
+  }
+
+  /* Hide only visually, but have it available for screen readers: */
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+  }
+
+footer{
+    margin-top: 1em;
+}

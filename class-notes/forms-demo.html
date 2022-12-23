@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Accessible Forms </title>
+    <link href="css/form.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>  
+      <h1> Accessible Forms </h1>
+    </header>
+
+    <main>
+      <section>
+        <h2> Accessible Form Example </h2>
+
+        <form id="myForm" method="post">  
+          <fieldset>
+            <legend> Give us your information!</legend>
+
+            <label for="name">
+              What is your name?
+              <input type="text" id="name" required>
+            </label>
+
+            <label for="your-email">
+              What is your email?
+              <input type="email" id="your-email">
+            </label>
+
+            <label for="website">
+              What is your website?
+              <input type="url" id="website">
+            </label>
+
+            <label for="phone">
+              What is your phone number?
+              <input type="tel" id="phone" minlength="7">
+            </label>
+
+            <label for="age">
+              How old are you?
+              <input type="number" id="age">
+            </label>
+
+            <label for="password">
+              What is your password?
+              <input type="text" id="password" maxlength="20" minlength="5" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+!=]).*" required>
+            </label>
+            <ul class="inputRequirements">
+              <li>must be at least 5 characters and contain uppercase, lowercase, number and symbol</li>
+            </ul>
+
+            <input type="submit"> 
+          </fieldset>
+        </form>
+        
+
+      </section>
+    </main>
+
+  </body>
+</html>
